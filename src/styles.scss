@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.ninja {
+  display: inline;
+
+  img {
+    width: 30px;
+    position: relative;
+    top: -3px;
+  }
+
+  span {
+    position: absolute;
+    bottom: 3px;
+    font-size: 12px;
+    color: yellow;
+  }
+
+  &__x {
+    left: 10px;
+  }
+  &__y {
+    right: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+<ng-template ninjaScene></ng-template>
+
+<tile
+  #ninja
+  [templateRef]="ninjaTmpl"
+  [x]="1" [y]="4"
+></tile>
+
+<ng-template #ninjaTmpl let-position>
+  <div class="ninja">
+    <img src="./assets/ninja.png" alt="ninja">
+    <span class="ninja__x">x:{{ position.x }}</span>
+    <span class="ninja__y">y:{{ position.y }}</span>
+  </div>
+</ng-template>
+
+<tile
+  #shuriken
+  *ngFor="let shuriken of shurikens"
+  [x]="shuriken.x" [y]="shuriken.y"
+>
+  <img src="./assets/shuriken.png" alt="shuriken">
+</tile>

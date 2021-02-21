@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  position: absolute;
+
+  width: 64px;
+  height: 64px;
+
+  background-image: url('../../assets/tiledbackground.png');
+
+  justify-content: center;
+  align-items: center;
+
+  &.wall {
+    background-image: url('../../assets/wall.png');
+  }
+}
