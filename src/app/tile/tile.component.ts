@@ -29,6 +29,8 @@ export class TileComponent {
     this.hostTop = this.toPx(y * this.size);
   }
 
+  @Input() templateRef: TemplateRef<{ $implicit: Position }>;
+
   @HostBinding('class') hostClass: string;
   @HostBinding('style.top') hostTop: string;
   @HostBinding('style.left') hostLeft: string;

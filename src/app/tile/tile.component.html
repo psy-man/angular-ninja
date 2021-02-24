@@ -1,2 +1,6 @@
+<ng-content></ng-content>
 
-
+<ng-template
+  [ngTemplateOutlet]="templateRef"
+  [ngTemplateOutletContext]="{ $implicit: { x: x, y: y }}"
+></ng-template>
