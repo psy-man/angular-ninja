@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { NinjaComponent} from './ninja.component';
+import { NinjaRootComponent} from './ninja-root.component';
 import { TileComponent } from './tile/tile.component';
-import { NinjaDirective } from './ninja.directive';
+import { NinjaSceneDirective } from './ninja-scene.directive';
 
 @NgModule({
   declarations: [
-    NinjaComponent,
+    NinjaRootComponent,
     TileComponent,
 
-    NinjaDirective,
+    NinjaSceneDirective,
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [NinjaComponent]
+  bootstrap: [NinjaRootComponent]
 })
-export class NinjaModule { }
+export class NinjaRootModule { }

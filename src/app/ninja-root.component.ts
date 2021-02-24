@@ -11,16 +11,16 @@ import {
   ViewChildren,
   ViewContainerRef
 } from '@angular/core';
-import { NinjaDirective } from './ninja.directive';
+import { NinjaSceneDirective } from './ninja-scene.directive';
 import { TileComponent } from './tile/tile.component';
 import { Position, Tile } from './ninja.types';
 
 
 @Component({
   selector: 'ninja-root',
-  templateUrl: './ninja.component.html'
+  templateUrl: './ninja-root.component.html'
 })
-export class NinjaComponent implements OnInit, AfterViewInit {
+export class NinjaRootComponent implements OnInit, AfterViewInit {
   map: number[][] = [
     [ 1, 1, 1, 1, 1, 1, 1, 1 ],
     [ 1, 0, 1, 0, 0, 0, 0, 1 ],
@@ -48,7 +48,6 @@ export class NinjaComponent implements OnInit, AfterViewInit {
     { x: 4, y: 6 },
     { x: 6, y: 6 },
   ];
-  shurikenCollectedSound = new Audio('../assets/shuriken.mp3');
 
   constructor() {
   }

@@ -14,7 +14,7 @@ html, body {
     top: -3px;
   }
 
-  span {
+  &__x, &__y {
     position: absolute;
     bottom: 3px;
     font-size: 12px;

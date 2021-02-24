@@ -2,13 +2,12 @@
   display: flex;
   position: absolute;
 
-  width: 64px;
-  height: 64px;
-
-  background-image: url('../../assets/tiledbackground.png');
-
   justify-content: center;
   align-items: center;
+
+  &.background {
+    background-image: url('../../assets/tiledbackground.png');
+  }
 
   &.wall {
     background-image: url('../../assets/wall.png');
