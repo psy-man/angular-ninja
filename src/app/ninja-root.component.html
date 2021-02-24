@@ -13,12 +13,12 @@
   *ngFor="let shuriken of shurikens"
   [x]="shuriken.x" [y]="shuriken.y"
 >
-  <img src="../assets/shuriken.png" alt="shuriken">
+  <img src="./assets/shuriken.png" alt="shuriken">
 </tile>
 
 <ng-template #ninjaTemplate let-position>
   <div class="ninja">
-    <img src="../assets/ninja.png" alt="ninja">
+    <img src="./assets/ninja.png" alt="ninja">
     <div class="ninja__x">x: {{ position.x }}</div>
     <div class="ninja__y">y: {{ position.y }}</div>
   </div>
