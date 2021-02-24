@@ -2,7 +2,7 @@
 
 [Live Demo](https://psy-man.github.io/angular-ninja)
 
-![Picture](https://psy-man.github.io/angular-ninja/assets/demo.png)
+<img alt="Demo" src="https://psy-man.github.io/angular-ninja/assets/demo.png" width="400">
 
 ## Development server
 Generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
